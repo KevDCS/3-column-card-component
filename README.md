@@ -30,7 +30,6 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/KevDCS/3-column-card-component
-- Live Site URL: https://kevdcs.github.io/3-column-card-component/
 
 ## My process
 
