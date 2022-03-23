@@ -3,27 +3,23 @@
 
 body {
     background-color: hsl(0, 0%, 95%);
-    min-height: 100vh;
     display: flex;
     align-items: center;
 }
 
 .container {
-    max-width: 960px;
-    margin: 0 500px;
-}
-
-.columns {
+    position: absolute;
+    height: 500px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    min-height: 500px;
-    border-radius: 10px;
+    grid-template-columns: repeat(3, 305px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 h1 {
     font-family: 'Big Shoulders Display', sans-serif;
     text-transform: uppercase;
-    margin: 0;
     color: hsl(0, 0%, 95%);
 }
 
@@ -35,7 +31,7 @@ p {
 }
 
 figure {
-    margin: 0;
+    margin: 45px 0 0 0;
 }
 
 button {
@@ -43,6 +39,7 @@ button {
     border: 0.5px solid hsl(0, 0%, 95%);
     font-family: 'Lexend Deca', sans-serif;
     padding: 15px 40px;
+    margin: 88px 0 44px 0;
     border-radius: 40px;
     cursor: pointer;
     transition-duration: 0.4s;
@@ -56,31 +53,29 @@ button:hover {
 /* Sedan */
 
 .sedan-column {
-    padding: 40px 45px 40px 45px;
+    padding: 0px 45px;
     line-height: 25px;
     text-align: left;
     background-color: hsl(31, 77%, 52%);
-    /* border-radius: 10px 0 0 10px; */
 }
 
 .sedan-title {
     font-size: 20px;
-    padding: 30px 0;
+    margin-top: 40px;
 }
 
 .sedan-text {
-    padding: 20px 0 50px 0;
+    margin-top: 40px;;
 }
 
 .sedan-btn {
-    margin-top: 40px;
     color: hsl(31, 77%, 52%);
-}
+} 
 
 /* SUV */
 
 .suv-column {
-    padding: 40px 45px 40px 45px;
+    padding: 0 45px;
     line-height: 25px;
     text-align: left;
     background-color: hsl(184, 100%, 22%);
@@ -88,22 +83,21 @@ button:hover {
 
 .suv-title {
     font-size: 20px;
-    padding: 30px 0;
+    margin-top: 40px;
 }
 
 .suv-text {
-    padding: 20px 0 50px 0;
+    margin-top: 40px;
 }
 
 .suv-btn {
-    margin-top: 40px;
     color: hsl(184, 100%, 22%);
-}
+} 
 
 /* Luxury */
 
 .luxury-column {
-    padding: 40px 45px 40px 45px;
+    padding: 0 45px;
     line-height: 25px;
     text-align: left;
     background-color: hsl(179, 100%, 13%);
@@ -111,25 +105,15 @@ button:hover {
 
 .luxury-title {
     font-size: 20px;
-    padding: 30px 0;
+    margin-top: 40px;
 }
 
 .luxury-text {
-    padding: 20px 0 50px 0;
+    margin-top: 40px;
 }
 
 .luxury-btn {
-    margin-top: 40px;
     color: hsl(179, 100%, 13%);
-}
-
-.attribution { 
-    padding: 50px;
-    font-size: 11px;
-    text-align: center;
-}
-.attribution a {
-    color: hsl(228, 45%, 44%);
 }
 
 @media only screen and (max-width : 768px) {
@@ -137,4 +121,4 @@ button:hover {
         grid-template-columns: 1fr;
         border-radius: 10px;
     }
-}
+} 
